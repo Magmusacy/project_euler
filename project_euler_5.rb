@@ -1,3 +1,7 @@
+#logic behind this example is pretty weird because if you gotta find a number which is divisible by all numbers up to 20 you just need to find prime numbers of each
+#of the numbers below 20 and then create an array which has enough numbers to make each of the numbers from 1..20 so if you have number 6 it consists of 2 primes
+#[2,3] because 2 * 3 = 6 and you have number 4 which consists of [2,2] because 2 * 2 = 4, your array which would have all the primes should only include [2,2,3] so it 
+#can recreate 4 and 6 with [2,2] and [2,3]
 def find_primes(num,prime_array=[])
   i = 2
   until num % i == 0 
