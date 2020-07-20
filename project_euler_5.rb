@@ -9,7 +9,7 @@ def find_primes(num,prime_array=[])
 end
 
 def merge_primes(full_array, compound, iterator)
-  return full_array if iterator == 20
+  return full_array if iterator == 20 # change this number to whatever you want so for example 20 will be equal to a number which is divisible by all numbers below 20, 30 will equal a number divisible by all numbers below 30
   full_array = check_add(full_array, compound)
   merge_primes(full_array, find_primes(iterator+1), iterator+1)
 end
